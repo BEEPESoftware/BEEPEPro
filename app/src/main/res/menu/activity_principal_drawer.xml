@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:showIn="navigation_view">
+
+	<group
+		android:id="@+id/mnuFuncionalidades"
+		android:checkableBehavior="single">
+
+		<item
+			android:id="@+id/fgmPesquisa"
+			android:icon="@drawable/ic_menu_camera"
+			android:title="Pesquisa" />
+
+	</group>
+
+	<item
+		android:id="@+id/actSair"
+		android:icon="@drawable/ic_menu_slideshow"
+		android:title="Sair" />
+
+</menu>

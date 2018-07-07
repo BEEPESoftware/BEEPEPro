@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/card_view"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginBottom="4dp"
+	android:layout_marginTop="4dp"
+	android:layout_marginLeft="6dp"
+	android:layout_marginRight="6dp"
+	card_view:cardElevation="5dp"
+	card_view:cardUseCompatPadding="false"
+	card_view:cardPreventCornerOverlap="true"
+	card_view:cardCornerRadius="6dp">
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ImageView
+			android:id="@+id/imgImovel"
+			android:layout_width="match_parent"
+			android:layout_height="196dp"
+			android:scaleType="centerCrop" />
+
+		<TextView
+			android:id="@+id/txtBairro"
+			android:layout_below="@+id/imgImovel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_marginTop="10dp"
+			android:textColor="@color/CardViewTitulo"
+			android:textSize="17dp"
+			android:textStyle="bold" />
+
+		<TextView
+			android:id="@+id/txtCidadeUf"
+			android:layout_below="@+id/txtBairro"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:textColor="@color/CardViewTitulo"
+			android:textSize="17dp" />
+
+		<View
+			android:id="@+id/vwUm"
+			android:layout_below="@+id/txtCidadeUf"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/CardViewDivider"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp" />
+
+		<ImageView
+			android:id="@+id/imgTipo"
+			android:layout_below="@+id/vwUm"
+			android:src="@drawable/tipo_imovel"
+			android:layout_width="18dp"
+			android:layout_height="18dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginTop="10dp" />
+
+		<TextView
+			android:id="@+id/txtTipo"
+			android:layout_below="@+id/vwUm"
+			android:layout_toRightOf="@+id/imgTipo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="10dp" />
+
+		<TextView
+			android:id="@+id/txtValor"
+			android:layout_below="@+id/vwUm"
+			android:layout_alignParentRight="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="10dp"
+			android:textColor="@color/CardViewValor"
+			android:textSize="22dp"
+			android:textStyle="bold" />
+
+		<ImageView
+			android:id="@+id/imgQuarto"
+			android:layout_below="@+id/imgTipo"
+			android:src="@drawable/quartos"
+			android:layout_width="18dp"
+			android:layout_height="18dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginTop="10dp" />
+
+		<TextView
+			android:id="@+id/txtQuartos"
+			android:layout_below="@+id/imgTipo"
+			android:layout_toRightOf="@+id/imgQuarto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"/>
+
+		<ImageView
+			android:id="@+id/imgGaragem"
+			android:layout_below="@+id/imgTipo"
+			android:layout_toRightOf="@+id/txtQuartos"
+			android:src="@drawable/garagem"
+			android:layout_width="18dp"
+			android:layout_height="18dp"
+			android:layout_marginLeft="30dp"
+			android:layout_marginTop="10dp" />
+
+		<TextView
+			android:id="@+id/txtGaragem"
+			android:layout_below="@+id/imgTipo"
+			android:layout_toRightOf="@+id/imgGaragem"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp" />
+
+		<ImageView
+			android:id="@+id/imgConstrucaoTotal"
+			android:layout_below="@+id/imgTipo"
+			android:layout_toRightOf="@+id/txtGaragem"
+			android:src="@drawable/construcao"
+			android:layout_width="18dp"
+			android:layout_height="18dp"
+			android:layout_marginLeft="30dp"
+			android:layout_marginTop="10dp" />
+
+		<TextView
+			android:id="@+id/txtConstrucaoTotal"
+			android:layout_below="@+id/imgTipo"
+			android:layout_toRightOf="@+id/imgConstrucaoTotal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp" />
+
+	</RelativeLayout>
+</android.support.v7.widget.CardView>
