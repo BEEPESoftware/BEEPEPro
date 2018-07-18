@@ -1,5 +1,6 @@
 package br.com.beepe.beepepro.imovel.visualizador;
 
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -10,6 +11,7 @@ public class PesquisaItem extends RecyclerView.ViewHolder
 {
 	public TextView bairro, cidadeUf, valor, tipo, quartos, garagem, construcaototal;
 	public ImageView foto;
+	public CardView cardView;
 
 	public PesquisaItem(View itemView)
 	{
@@ -22,5 +24,7 @@ public class PesquisaItem extends RecyclerView.ViewHolder
 		quartos					= (TextView)itemView.findViewById(R.id.txtQuartos);
 		garagem					= (TextView)itemView.findViewById(R.id.txtGaragem);
 		construcaototal	= (TextView)itemView.findViewById(R.id.txtConstrucaoTotal);
+		cardView	= (CardView) itemView.findViewById(R.id.card_view);
+
 	}
 }

@@ -12,6 +12,7 @@
 	<string name="error_field_required">Esta campo é obrigatório</string>
 	<string name="permission_rationale">Contacts permissions are needed for providing email completions.</string>
 	<string name="title_activity_principal">Principal</string>
+	<string name="title_activity_imovel_detail">Detalhe</string>
 	<string name="navigation_drawer_open">Abrir</string>
 	<string name="navigation_drawer_close">Fechar</string>
 	<string name="nav_header_title">BEEPE Pro</string>

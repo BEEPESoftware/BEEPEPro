@@ -58,8 +58,8 @@ public class PesquisaUltimas extends Fragment
 	}
 	private void PesquisaDisponivel()
 	{
-		PesquisaUltimasEnvio parametros					= new PesquisaUltimasEnvio(this.sessaoId);
-		iServico service												= Servico.CreateService(iServico.class);
+		PesquisaUltimasEnvio parametros	= new PesquisaUltimasEnvio(this.sessaoId);
+		iServico service = Servico.CreateService(iServico.class);
 		Call<List<PesquisaUltimasRetorno>> call	= service.ImovelPesquisaUltimosDisponiveis(parametros);
 
 		call.enqueue
@@ -105,7 +105,7 @@ public class PesquisaUltimas extends Fragment
 		this.lista							= getView().findViewById(R.id.rvwImoveis);
 		LinearLayoutManager lom	= new LinearLayoutManager(this.context);
 		this.lista.setLayoutManager(lom);
-		this.adaptador					= new br.com.beepe.beepepro.imovel.adaptador.PesquisaUltimas(new ArrayList<>(0));
+		this.adaptador = new br.com.beepe.beepepro.imovel.adaptador.PesquisaUltimas(getActivity(), new ArrayList<>(0));
 		this.lista.setAdapter(adaptador);
 	}
 }
